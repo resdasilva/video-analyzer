@@ -1,0 +1,232 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
+  <diagram name="Página-1" id="p5Z5gUO64FsKtNEcTwqj">
+    <mxGraphModel dx="1758" dy="770" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zhGdIxsIalsm-oxzojJM-93" value="criar_cliente1 [Webhook]" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="-240" y="451" width="167" height="26" as="geometry">
+            <mxRectangle x="-240" y="451" width="209" height="130" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-94" value="- HTTP Method: POST" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-93">
+          <mxGeometry y="26" width="209" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-95" value="- Path: agente-ofir/v1/cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-93">
+          <mxGeometry y="52" width="209" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-96" value="- Authentication: Header Auth" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-93">
+          <mxGeometry y="78" width="209" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-97" value="- Response Mode: Response Node" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-93">
+          <mxGeometry y="104" width="209" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-99" value="Select rows from table [PostgreSQL]" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="176" y="434" width="229" height="26" as="geometry">
+            <mxRectangle x="176" y="434" width="310" height="208" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-100" value="- Credential: Postgres account 3  " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-99">
+          <mxGeometry y="26" width="310" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-101" value="- Resource: Database" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-99">
+          <mxGeometry y="52" width="310" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-102" value="- Operation: Select" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-99">
+          <mxGeometry y="78" width="310" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-103" value="- Schema: public" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-99">
+          <mxGeometry y="104" width="310" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-104" value="- Table: ao_clientes" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-99">
+          <mxGeometry y="130" width="310" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-105" value="- Limit: 1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-99">
+          <mxGeometry y="156" width="310" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-106" value="- Where Conditions: numero = {{ $json.body.numero }}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-99">
+          <mxGeometry y="182" width="310" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-108" value="cliente2 [Set]" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="656" y="451" width="104" height="26" as="geometry">
+            <mxRectangle x="656" y="451" width="316" height="156" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-109" value="- Operation: Set Variables" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-108">
+          <mxGeometry y="26" width="316" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-110" value="- Assignments:" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-108">
+          <mxGeometry y="52" width="316" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-111" value="  • cliente: {{ $json.numero }} (string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-108">
+          <mxGeometry y="78" width="316" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-112" value="  • Clientedata: {{ $json.data }} (object)  " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-108">
+          <mxGeometry y="104" width="316" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-113" value="  • clienteDepartamento: {{ $json.departamento }} (string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-108">
+          <mxGeometry y="130" width="316" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zhGdIxsIalsm-oxzojJM-115" target="zhGdIxsIalsm-oxzojJM-121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-115" value="cliente_existente1 [IF]" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="939" y="451" width="179" height="156" as="geometry">
+            <mxRectangle x="939" y="451" width="151" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-116" value="- Condition Type: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-115">
+          <mxGeometry y="26" width="179" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-117" value="- Operation: Exists" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-115">
+          <mxGeometry y="52" width="179" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-118" value="- Left Value: {{ $json.cliente }}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=light-dark(#000000,#33FF33);" vertex="1" parent="zhGdIxsIalsm-oxzojJM-115">
+          <mxGeometry y="78" width="179" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-119" value="- Combinator: AND" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-115">
+          <mxGeometry y="104" width="179" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-120" value="- Case Sensitive: True" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-115">
+          <mxGeometry y="130" width="179" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-168" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zhGdIxsIalsm-oxzojJM-121" target="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-121" value="↓ TRUE                           ↓ FALSE" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1159" y="377" width="160" height="37" as="geometry">
+            <mxRectangle x="1258" y="451" width="127" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-122" value="cliente_atualizado1 [Set]        novo_cliente1 [PostgreSQL]" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="1453" y="473" width="334" height="624" as="geometry">
+            <mxRectangle x="1453" y="473" width="319" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-123" value="- Operation: Set Variables       - Credential: Postgres account 3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="26" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-124" value="- Assignments:                   - Resource: Database  " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="52" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-125" value="  • clienteNumero (string)       - Operation: Upsert" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="78" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-126" value="  • clientedata (object)         - Schema: public" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="104" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-127" value="  • clienteDepartamento (string) - Table: ao_clientes" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="130" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-128" value="                                 - Matching Columns: numero" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="156" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-129" value="↓                               - Columns:" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="182" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-130" value="                                   • numero: {{ body.numero }}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="208" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-131" value="Respond to Webhook3              • departamento: &quot;secretaria&quot; " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="234" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-132" value="[Respond to Webhook]             • data: &quot;{}&quot;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="260" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-133" value="- Respond With: JSON             " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="286" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-134" value="- Response Body:                 ↓" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="312" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-135" value="  {                             " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="338" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-136" value="    &quot;clienteNumero&quot;: &quot;...&quot;,      tratamento6 [Set]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="364" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-137" value="    &quot;clienteData&quot;: {...},        - Operation: Set Variables" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="390" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-138" value="    &quot;clienteDepartamento&quot;: &quot;...&quot;, - Assignments:" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="416" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-139" value="    &quot;departamentos&quot;: &quot;...&quot;         • clienteNumero (string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="442" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-140" value="  }                               • clienteDepartamento (string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="468" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-141" value="                                  • clienteData (object)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="494" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-142" value="                                " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="520" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-143" value="                                ↓" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="546" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-144" value="                                " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="572" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-145" value="                                (conecta de volta para cliente_atualizado1)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-122">
+          <mxGeometry y="598" width="334" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-146" value="=== FLUXO RESUMIDO ===" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1827" y="451" width="202" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-147" value="1. WEBHOOK recebe POST em /agente-ofir/v1/cliente" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="2069" y="451" width="335" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-148" value="2. CONSULTA PostgreSQL para verificar se cliente existe" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-147">
+          <mxGeometry y="26" width="335" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-149" value="3. PROCESSA dados do cliente " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-147">
+          <mxGeometry y="52" width="335" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-150" value="4. DECISÃO: Cliente existe?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-147">
+          <mxGeometry y="78" width="335" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-151" value="   - SIM: Atualiza dados existentes" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-147">
+          <mxGeometry y="104" width="335" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-152" value="   - NÃO: Cria novo cliente no banco" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-147">
+          <mxGeometry y="130" width="335" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-153" value="5. RESPONDE com dados do cliente em JSON" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-147">
+          <mxGeometry y="156" width="335" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-154" value="=== CONFIGURAÇÕES PRINCIPAIS ===" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="2444" y="451" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-155" value="Base de Dados: PostgreSQL" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="2754" y="451" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-156" value="Tabela: ao_clientes  " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-155">
+          <mxGeometry y="26" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-157" value="Autenticação: Header Auth" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-155">
+          <mxGeometry y="52" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-158" value="Endpoint: POST /agente-ofir/v1/cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-155">
+          <mxGeometry y="78" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-159" value="Operações: Select, Upsert, Set Variables" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zhGdIxsIalsm-oxzojJM-155">
+          <mxGeometry y="104" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-163" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.992;exitY=0.083;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="zhGdIxsIalsm-oxzojJM-103">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="802" y="589" as="sourcePoint" />
+            <mxPoint x="655" y="507" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="552" y="536" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zhGdIxsIalsm-oxzojJM-166" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.008;entryY=0.566;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="zhGdIxsIalsm-oxzojJM-108" target="zhGdIxsIalsm-oxzojJM-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
